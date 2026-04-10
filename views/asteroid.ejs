@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include("partials/head.ejs")%>
+</head>
+
+<body>
+    <h1 class="bg-info text-white p-3 m-0">The Solar System</h1>
+
+    <%-include("partials/nav.ejs")%>
+
+    <div class="container-fluid m-5 row">
+        <div class="card p-4 col">
+            <h2>Asteroids</h2>
+            <%=asteroidInfo.def%>
+            <a href="<%=asteroidInfo.link%>">Additional Info</a>
+        </div>
+
+        <div class="col card">
+            <img src="<%=asteroidInfo.image%>" alt="planetImage">
+        </div>
+    </div>
+
+    <%-include("partials/footer.ejs")%>
+</body>
+
+</html>
