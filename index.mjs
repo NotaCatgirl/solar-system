@@ -64,6 +64,6 @@ app.get("/nasa", async (req, res) => {
   res.render("nasa.ejs", { nasaImage });
 });
 
-app.listen(5050, () => {
+app.listen(3000, () => {
   console.log("Server is running on http://localhost:5050");
 });
